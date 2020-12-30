@@ -1,0 +1,165 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    color: #808080;
+}
+
+nav{
+  text-align: right;
+  object-position: center;
+  width: 100%;
+}
+input{
+  display: none;
+}
+
+label{
+  font-size:25px;
+  display:none;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+li {
+  display: inline-block;
+  font-size: 25px;
+  margin: 50px 0 10px 30px;
+}
+li a {
+  display: block;
+  text-align: center;
+  padding: 0 16px 0 0;
+  text-decoration: none;
+  color: #808080;
+}
+li a:hover {
+  background-color: rgb(202, 197, 197);
+}
+.titulo{
+  font-size: 68px;
+  margin: 30px;
+}
+.barra{
+  font-size: 25px;
+  margin: 30px;
+}
+.subtit{
+  font-size: 25px;
+  margin: 50px 0 10px 30px;
+}
+.subtit1{
+  font-size: 30px;
+  margin: 50px 0 10px 30px;
+}
+.subtit2{
+  font-size: 30px;
+  margin: 120px 0 10px 30px;
+}
+.p1{
+  font-size: 21px;
+  font-weight: 300;
+  margin: 0.5px 0 0.5px 30px;
+}
+.p2{
+  font-size: 13px;
+  margin-left: 30px;
+}
+.abajo{
+  margin: 100px 0 0.5px 30px;
+}
+.arriba{
+  margin-top: 30px;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "arquitech proyecto proyecto searchcontact"
+      "imagen1 imagen1 Dinig-Table ."
+      ". Plinth-sinks imagen2 imagen2"
+      "imagen3 imagen3 Harbour-tables ."
+      ". . imagen4 sushi"
+      "imagen5 imagen5 sofa .";
+  }
+  .borde {
+    border: #808080 1px solid;
+  }
+  img {
+    width: 100%;
+    height: 100%; 
+    background-size: cover;
+  }
+  .proyecto { 
+      grid-area: proyecto; 
+    }
+  .arquitech { grid-area: arquitech; }
+  
+  .searchcontact { grid-area: searchcontact; }
+  
+  .imagen1 { grid-area: imagen1; }
+  
+  .Dinig-Table { grid-area: Dinig-Table; }
+
+  .Plinth-sinks { grid-area: Plinth-sinks; }
+  
+  .imagen2 { grid-area: imagen2; }
+  
+  .Harbour-tables { grid-area: Harbour-tables; }
+  
+  .imagen3 { grid-area: imagen3; }
+  
+  .imagen4 { grid-area: imagen4; }
+  
+  .sushi { grid-area: sushi; }
+  
+  .imagen5 { grid-area: imagen5; }
+  
+  .sofa { grid-area: sofa; }
+  
+  @media (max-width: 500px) {
+    .grid-container{
+    display: flex;
+    flex-direction: column;
+    }
+  }
+  @media (max-width: 800px) {
+    .grid-container{
+    display: flex;
+    flex-direction: column;
+    }
+
+    input {
+      display: none;
+    }
+
+    label {
+      box-sizing: border-box;
+      display: inline-block;
+      width: 30px;
+      height: 30px;
+      line-height: 30px;
+      font-weight: bold;
+      text-align: center;
+      user-select: none;
+    }
+
+    ul{
+        display: none;
+    }
+
+    input:checked  ~ ul{
+        display:block;
+        
+    }
+
+  }
+
